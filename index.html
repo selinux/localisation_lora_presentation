@@ -49,9 +49,9 @@
                         <p>trilatération</p>
                         <img src="trilateration.png" height="250">
                         <ul>
-                            <p style="font-size: 80%" class="fragment fade-in">synchronisation des horloges R1,R2,R3</p>
-                            <p style="font-size: 80%" class="fragment fade-in">détection de la réception et timestamp</p>
-                            <p style="font-size: 80%"  class="fragment fade-in">on peut ainsi en déduire la position de E</p>
+                            <p style="font-size: 90%" class="fragment fade-in">synchronisation des horloges R1,R2,R3</p>
+                            <p style="font-size: 90%" class="fragment fade-in">détection de la réception et timestamp</p>
+                            <p style="font-size: 90%"  class="fragment fade-in">on peut ainsi en déduire la position de E</p>
                         </ul>
                     </section>
 
@@ -59,9 +59,9 @@
                         Synchronisation par GPSDO
                         <hr>
                         <ul>
-                            <p style="font-size: 80%" class="fragment fade-in">utilisation du signal PPS (pulse per seconde) du GPS</p>
-                            <p style="font-size: 80%" class="fragment fade-in">précision GPSDO de l'ordre de la ns</p>
-                            <p style="font-size: 80%" class="fragment fade-in">compteur du FPGA 20ns (50MHz)</p>
+                            <p style="font-size: 90%" class="fragment fade-in">utilisation du signal PPS (pulse per seconde) du GPS</p>
+                            <p style="font-size: 90%" class="fragment fade-in">précision GPSDO de l'ordre de la ns</p>
+                            <p style="font-size: 90%" class="fragment fade-in">précision du compteur du FPGA 20ns (50MHz)</p>
                         </ul>
                         <p class="fragment fade-in">Une onde radio parcourt ~5m en 20ns</p>
                     </section>
@@ -74,10 +74,10 @@
                         <img src="illustration_B200.png" height="200">
                         <hr>
                         <ul>
-                            <p style="font-size: 80%" class="fragment fade-in">Software Defined Radio - SDR</p>
-                            <p style="font-size: 80%" class="fragment fade-in">permet l'aquisition/traitement d'un signal radio</p>
-                            <p style="font-size: 80%" class="fragment fade-in">FPGA Xilinx Spartan 6</p>
-                            <p style="font-size: 80%" class="fragment fade-in">API C++ comuniquant avec le <em>core</em> du FPGA</p>
+                            <p class="fragment fade-in">Software Defined Radio - SDR</p>
+                            <p class="fragment fade-in">permet l'aquisition/traitement d'un signal radio</p>
+                            <p class="fragment fade-in">FPGA Xilinx Spartan 6</p>
+                            <p class="fragment fade-in">API C++ comuniquant avec le <em>core</em> du FPGA</p>
                         </ul>
                     </section>
                 </section>
@@ -97,9 +97,9 @@
                         Implémentation
                         <img src="block_lora_detect_RTL.png" height="300">
                         <ul>
-                            <p style="font-size: 80%" class="fragment highlight-red">compteur interne synchronisé</p>
-                            <p style="font-size: 80%" class="fragment highlight-blue">trigger par detection ou manuelle</p>
-                            <p  style="font-size: 80%">relecture via le protocole de la carte</p>
+                            <p style="font-size: 90%" class="fragment highlight-red">compteur interne synchronisé</p>
+                            <p style="font-size: 90%" class="fragment highlight-blue">trigger par detection ou manuelle</p>
+                            <p style="font-size: 90%">relecture via le protocole de la carte</p>
                         </ul>
                     </section>
 
@@ -112,9 +112,9 @@
                         <ul>
                             <p class="fragment fade-in">Hijack des registres, du GPS et de l'API C++</p>
                             <hr>
-                            <p style="font-size: 80%" class="fragment fade-in">ajout des registres dans le FPGA</p>
-                            <p style="font-size: 80%" class="fragment fade-in">extension de l'API pour permettre une communication entre l'OS et le matériel</p>
-                            <p style="font-size: 80%" class="fragment fade-in">détourner l'API pour qu'elle reconnaisse le GPS</p>
+                            <p class="fragment fade-in">ajout des registres dans le FPGA</p>
+                            <p class="fragment fade-in">extension de l'API pour permettre une communication entre l'OS et le matériel</p>
+                            <p class="fragment fade-in">détourner l'API pour qu'elle reconnaisse le GPS</p>
                         </ul>
                     </section>
                 </section>
@@ -125,10 +125,10 @@
                         <p>Travail à effectuer</p>
                         <hr>
                         <ul>
-                            <p style="font-size: 80%" class="fragment fade-in">évaluer la synchronisation des récepteurs</p>
-                            <p style="font-size: 80%" class="fragment fade-in">implémenter l'algorithme de detection de paquets LoRa</p>
-                            <p style="font-size: 80%" class="fragment fade-in">écrire un programme exploitant la nouvelle API</p>
-                            <p style="font-size: 80%" class="fragment fade-in">faire des tests grandeur nature</p>
+                            <p class="fragment fade-in">évaluer la synchronisation des récepteurs</p>
+                            <p class="fragment fade-in">implémenter l'algorithme de detection de paquets LoRa</p>
+                            <p class="fragment fade-in">écrire un programme exploitant la nouvelle API</p>
+                            <p class="fragment fade-in">faire des tests grandeur nature</p>
                         </ul>
                     </section>
                 </section>
